@@ -15,7 +15,7 @@ console.log(a[4]);
 a.push(94);
 
 var balls = []
-length = 6;
+//length = 6;
 
 
 function preload() {
@@ -64,7 +64,8 @@ function draw()
 function keyPressed(){
   if (keyCode===DOWN_ARROW){
     cannonball = new Cannonball (cannon.x,cannon.y)
-    balls.push(Cannonball)
+   ///////////////////////// //tiene que esta escrito como cuando llamamos la clase, es decir en minusculas/////////////////////////////////////////
+    balls.push(cannonball)
    }
 }
 
@@ -77,7 +78,3 @@ if (keyCode===DOWN_ARROW){
 function showCannonBalls(ball,index){
 ball.display();
 }
-
-
-
-// usar para las llaves= {}
